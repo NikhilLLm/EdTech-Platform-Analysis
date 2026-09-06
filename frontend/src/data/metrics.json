@@ -1,0 +1,1039 @@
+{
+  "funnel": {
+    "macro_stages": [
+      {
+        "Stage": "1. Enrolled",
+        "Count": 149316,
+        "Pct_of_Enrolled": 100.0,
+        "Step_Conversion_Pct": 100.0
+      },
+      {
+        "Stage": "2. Started Lesson 1",
+        "Count": 129873,
+        "Pct_of_Enrolled": 86.9786225186852,
+        "Step_Conversion_Pct": 86.9786225186852
+      },
+      {
+        "Stage": "3. Completed Lesson 1 (Activated)",
+        "Count": 113297,
+        "Pct_of_Enrolled": 75.8773339762651,
+        "Step_Conversion_Pct": 87.2367620675583
+      },
+      {
+        "Stage": "4. Completed Course",
+        "Count": 69597,
+        "Pct_of_Enrolled": 46.6105440810094,
+        "Step_Conversion_Pct": 61.42881100117391
+      },
+      {
+        "Stage": "5. Paid Certification",
+        "Count": 19136,
+        "Pct_of_Enrolled": 12.81577325939618,
+        "Step_Conversion_Pct": 27.49543802175381
+      }
+    ],
+    "overall_conversion_pct": 12.82,
+    "lesson_1_drop_off_count": 36017,
+    "total_incomplete_enrollments": 79719,
+    "lesson_1_drop_off_share_pct": 45.18
+  },
+  "cohort_retention": {
+    "mean_activated_d1_pct": 31.56,
+    "mean_activated_d7_pct": 70.06,
+    "mean_activated_d30_pct": 74.74,
+    "mean_completed_d30_pct": 37.13,
+    "mean_paid_d30_pct": 9.72,
+    "activation_d7_drift_slope_per_week": 0.0186,
+    "activation_d7_drift_p_value": 0.1237
+  },
+  "ab_test": {
+    "step_conditional": [
+      {
+        "Stage": "1. Enrolled | Registered",
+        "Control_Rate_Pct": 86.99,
+        "Treatment_Rate_Pct": 86.86,
+        "Diff_Pct_Points": -0.13,
+        "Relative_Lift_Pct": -0.15,
+        "Z_Score": -0.613,
+        "P_Value": 0.5399998799772745,
+        "CI_95_Lower": -0.55,
+        "CI_95_Upper": 0.29,
+        "Significant_p05": false
+      },
+      {
+        "Stage": "2. Activated | Enrolled",
+        "Control_Rate_Pct": 83.06,
+        "Treatment_Rate_Pct": 88.86,
+        "Diff_Pct_Points": 5.8,
+        "Relative_Lift_Pct": 6.98,
+        "Z_Score": 24.613,
+        "P_Value": 0.0,
+        "CI_95_Lower": 5.34,
+        "CI_95_Upper": 6.26,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "3. Completed | Activated",
+        "Control_Rate_Pct": 71.72,
+        "Treatment_Rate_Pct": 72.51,
+        "Diff_Pct_Points": 0.79,
+        "Relative_Lift_Pct": 1.1,
+        "Z_Score": 2.411,
+        "P_Value": 0.015914978406997182,
+        "CI_95_Lower": 0.15,
+        "CI_95_Upper": 1.43,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "4. Paid | Completed",
+        "Control_Rate_Pct": 32.29,
+        "Treatment_Rate_Pct": 33.65,
+        "Diff_Pct_Points": 1.36,
+        "Relative_Lift_Pct": 4.22,
+        "Z_Score": 3.361,
+        "P_Value": 0.0007762305797154312,
+        "CI_95_Lower": 0.57,
+        "CI_95_Upper": 2.16,
+        "Significant_p05": true
+      }
+    ],
+    "cumulative": [
+      {
+        "Stage": "1. Enrolled (Overall)",
+        "Control_Rate_Pct": 86.99,
+        "Treatment_Rate_Pct": 86.86,
+        "Diff_Pct_Points": -0.13,
+        "Relative_Lift_Pct": -0.15,
+        "Z_Score": -0.613,
+        "P_Value": 0.5399998799772745,
+        "CI_95_Lower": -0.55,
+        "CI_95_Upper": 0.29,
+        "Significant_p05": false
+      },
+      {
+        "Stage": "2. Activated (Overall)",
+        "Control_Rate_Pct": 72.26,
+        "Treatment_Rate_Pct": 77.18,
+        "Diff_Pct_Points": 4.93,
+        "Relative_Lift_Pct": 6.82,
+        "Z_Score": 17.933,
+        "P_Value": 0.0,
+        "CI_95_Lower": 4.39,
+        "CI_95_Upper": 5.47,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "3. Completed (Overall)",
+        "Control_Rate_Pct": 51.82,
+        "Treatment_Rate_Pct": 55.97,
+        "Diff_Pct_Points": 4.15,
+        "Relative_Lift_Pct": 8.0,
+        "Z_Score": 13.151,
+        "P_Value": 0.0,
+        "CI_95_Lower": 3.53,
+        "CI_95_Upper": 4.76,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "4. Paid (Overall)",
+        "Control_Rate_Pct": 16.73,
+        "Treatment_Rate_Pct": 18.84,
+        "Diff_Pct_Points": 2.1,
+        "Relative_Lift_Pct": 12.56,
+        "Z_Score": 8.689,
+        "P_Value": 0.0,
+        "CI_95_Lower": 1.63,
+        "CI_95_Upper": 2.58,
+        "Significant_p05": true
+      }
+    ]
+  },
+  "payment_drivers": {
+    "category_conversion": [
+      {
+        "course_category": "cloud_devops",
+        "completed_enrollments": 11483,
+        "paid_certificates": 3803,
+        "conversion_rate_pct": 33.118523034050334
+      },
+      {
+        "course_category": "programming",
+        "completed_enrollments": 17468,
+        "paid_certificates": 5331,
+        "conversion_rate_pct": 30.518662697504006
+      },
+      {
+        "course_category": "data_analytics",
+        "completed_enrollments": 17357,
+        "paid_certificates": 4929,
+        "conversion_rate_pct": 28.39776459065507
+      },
+      {
+        "course_category": "marketing",
+        "completed_enrollments": 11741,
+        "paid_certificates": 2754,
+        "conversion_rate_pct": 23.456264372711015
+      },
+      {
+        "course_category": "design",
+        "completed_enrollments": 11548,
+        "paid_certificates": 2319,
+        "conversion_rate_pct": 20.081399376515414
+      }
+    ],
+    "model_auc": 0.5675,
+    "odds_ratios": [
+      {
+        "Feature": "Intercept",
+        "Coefficient": -2.3330650419447263,
+        "Odds_Ratio": 0.09699798809866567,
+        "P_Value": 3.794826828160759e-117,
+        "CI_Lower": 0.07951560351963054,
+        "CI_Upper": 0.11832406821720372
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.cloud_devops]",
+        "Coefficient": 0.680273072292366,
+        "Odds_Ratio": 1.9744168171488652,
+        "P_Value": 3.93581783546057e-105,
+        "CI_Lower": 1.8571518424694575,
+        "CI_Upper": 2.0990861806198096
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.data_analytics]",
+        "Coefficient": 0.4582783598917417,
+        "Odds_Ratio": 1.5813491259738066,
+        "P_Value": 1.7831783812152684e-55,
+        "CI_Lower": 1.4933612948688817,
+        "CI_Upper": 1.6745211402025004
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.marketing]",
+        "Coefficient": 0.199565700559464,
+        "Odds_Ratio": 1.220872418797012,
+        "P_Value": 4.583550912816747e-10,
+        "CI_Lower": 1.146609940074046,
+        "CI_Upper": 1.2999446550088438
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.programming]",
+        "Coefficient": 0.5598825499974601,
+        "Odds_Ratio": 1.7504668958808507,
+        "P_Value": 2.3096652080422327e-80,
+        "CI_Lower": 1.6521522938035687,
+        "CI_Upper": 1.8546319035278045
+      },
+      {
+        "Feature": "C(signup_channel, Treatment('organic'))[T.paid_ad]",
+        "Coefficient": 0.006759423521202115,
+        "Odds_Ratio": 1.006782319984263,
+        "P_Value": 0.7496117270235323,
+        "CI_Lower": 0.9658455251612593,
+        "CI_Upper": 1.049454196791625
+      },
+      {
+        "Feature": "C(signup_channel, Treatment('organic'))[T.referral]",
+        "Coefficient": -0.0015307562578963645,
+        "Odds_Ratio": 0.9984704147518778,
+        "P_Value": 0.9539761920601217,
+        "CI_Lower": 0.9478918508482507,
+        "CI_Upper": 1.0517478003873977
+      },
+      {
+        "Feature": "C(signup_channel, Treatment('organic'))[T.social]",
+        "Coefficient": -0.004834782396319015,
+        "Odds_Ratio": 0.9951768863512316,
+        "P_Value": 0.8398392202949533,
+        "CI_Lower": 0.94959219193003,
+        "CI_Upper": 1.0429498510458555
+      },
+      {
+        "Feature": "quiz_pass_rate_clean",
+        "Coefficient": 1.1926320391170997,
+        "Odds_Ratio": 3.2957443295389877,
+        "P_Value": 9.548849496672125e-26,
+        "CI_Lower": 2.6374448174626375,
+        "CI_Upper": 4.118353723941852
+      },
+      {
+        "Feature": "days_to_complete",
+        "Coefficient": 0.0006879455618600302,
+        "Odds_Ratio": 1.0006881822506812,
+        "P_Value": 0.5470949302707382,
+        "CI_Lower": 0.9984498093958373,
+        "CI_Upper": 1.0029315731975619
+      },
+      {
+        "Feature": "age_clean",
+        "Coefficient": -7.731032644559932e-05,
+        "Odds_Ratio": 0.9999226926619207,
+        "P_Value": 0.9463798798101084,
+        "CI_Lower": 0.9976723541119565,
+        "CI_Upper": 1.0021781070502285
+      }
+    ]
+  },
+  "churn_risk": {
+    "segment_distribution": [
+      {
+        "churn_risk_segment": "High Churn Risk",
+        "user_count": 61894,
+        "pct": 61.89
+      },
+      {
+        "churn_risk_segment": "Completed All",
+        "user_count": 27314,
+        "pct": 27.31
+      },
+      {
+        "churn_risk_segment": "Active / Low Risk",
+        "user_count": 6808,
+        "pct": 6.81
+      },
+      {
+        "churn_risk_segment": "Medium Churn Risk",
+        "user_count": 3984,
+        "pct": 3.98
+      }
+    ],
+    "test_roc_auc": 0.7796,
+    "odds_ratios": [
+      {
+        "Feature": "activated_int",
+        "Coefficient": -7.207207413470704,
+        "Odds_Ratio": 0.0007412242006361232
+      },
+      {
+        "Feature": "quiz_pass_rate",
+        "Coefficient": -3.2213521464008363,
+        "Odds_Ratio": 0.03990106968088907
+      },
+      {
+        "Feature": "total_enrolled_courses",
+        "Coefficient": -0.6998193703965744,
+        "Odds_Ratio": 0.4966750098994458
+      },
+      {
+        "Feature": "signup_channel_paid_ad",
+        "Coefficient": -0.02180489424579251,
+        "Odds_Ratio": 0.9784311139702481
+      },
+      {
+        "Feature": "signup_channel_social",
+        "Coefficient": -0.01709025385457007,
+        "Odds_Ratio": 0.9830549561318801
+      },
+      {
+        "Feature": "age_clean",
+        "Coefficient": 3.862610531525443e-05,
+        "Odds_Ratio": 1.0000386268513128
+      },
+      {
+        "Feature": "signup_channel_referral",
+        "Coefficient": 0.014233899214842383,
+        "Odds_Ratio": 1.0143356835140505
+      }
+    ],
+    "total_enrolled_cohort": 86926,
+    "baseline_churn_rate_pct": 37.99
+  },
+  "cohort_weekly": [
+    {
+      "week": "2024-01-01",
+      "cohort_size": 792,
+      "enroll_d1_pct": 43.3,
+      "enroll_d7_pct": 80.3,
+      "act_d1_pct": 28.4,
+      "act_d7_pct": 67.9,
+      "act_d30_pct": 73.5,
+      "comp_d30_pct": 36.2,
+      "paid_d30_pct": 9.1
+    },
+    {
+      "week": "2024-01-08",
+      "cohort_size": 1142,
+      "enroll_d1_pct": 43.0,
+      "enroll_d7_pct": 82.1,
+      "act_d1_pct": 29.2,
+      "act_d7_pct": 70.3,
+      "act_d30_pct": 75.8,
+      "comp_d30_pct": 37.9,
+      "paid_d30_pct": 9.0
+    },
+    {
+      "week": "2024-01-15",
+      "cohort_size": 1305,
+      "enroll_d1_pct": 41.8,
+      "enroll_d7_pct": 82.4,
+      "act_d1_pct": 29.4,
+      "act_d7_pct": 70.3,
+      "act_d30_pct": 75.7,
+      "comp_d30_pct": 36.5,
+      "paid_d30_pct": 8.0
+    },
+    {
+      "week": "2024-01-22",
+      "cohort_size": 1381,
+      "enroll_d1_pct": 43.9,
+      "enroll_d7_pct": 83.6,
+      "act_d1_pct": 30.8,
+      "act_d7_pct": 71.8,
+      "act_d30_pct": 76.9,
+      "comp_d30_pct": 38.2,
+      "paid_d30_pct": 9.8
+    },
+    {
+      "week": "2024-01-29",
+      "cohort_size": 1390,
+      "enroll_d1_pct": 43.7,
+      "enroll_d7_pct": 81.4,
+      "act_d1_pct": 32.2,
+      "act_d7_pct": 69.5,
+      "act_d30_pct": 74.2,
+      "comp_d30_pct": 37.1,
+      "paid_d30_pct": 9.3
+    },
+    {
+      "week": "2024-02-05",
+      "cohort_size": 1465,
+      "enroll_d1_pct": 41.8,
+      "enroll_d7_pct": 83.1,
+      "act_d1_pct": 28.9,
+      "act_d7_pct": 68.9,
+      "act_d30_pct": 74.1,
+      "comp_d30_pct": 36.4,
+      "paid_d30_pct": 8.0
+    },
+    {
+      "week": "2024-02-12",
+      "cohort_size": 1509,
+      "enroll_d1_pct": 45.5,
+      "enroll_d7_pct": 81.9,
+      "act_d1_pct": 31.3,
+      "act_d7_pct": 68.7,
+      "act_d30_pct": 73.8,
+      "comp_d30_pct": 37.8,
+      "paid_d30_pct": 8.9
+    },
+    {
+      "week": "2024-02-19",
+      "cohort_size": 1605,
+      "enroll_d1_pct": 44.1,
+      "enroll_d7_pct": 81.9,
+      "act_d1_pct": 32.1,
+      "act_d7_pct": 70.3,
+      "act_d30_pct": 75.0,
+      "comp_d30_pct": 37.9,
+      "paid_d30_pct": 8.5
+    },
+    {
+      "week": "2024-02-26",
+      "cohort_size": 1632,
+      "enroll_d1_pct": 44.4,
+      "enroll_d7_pct": 82.7,
+      "act_d1_pct": 28.9,
+      "act_d7_pct": 70.4,
+      "act_d30_pct": 76.4,
+      "comp_d30_pct": 35.8,
+      "paid_d30_pct": 8.3
+    },
+    {
+      "week": "2024-03-04",
+      "cohort_size": 1653,
+      "enroll_d1_pct": 45.0,
+      "enroll_d7_pct": 81.7,
+      "act_d1_pct": 29.6,
+      "act_d7_pct": 69.8,
+      "act_d30_pct": 75.1,
+      "comp_d30_pct": 36.8,
+      "paid_d30_pct": 9.6
+    },
+    {
+      "week": "2024-03-11",
+      "cohort_size": 1588,
+      "enroll_d1_pct": 44.0,
+      "enroll_d7_pct": 83.2,
+      "act_d1_pct": 30.3,
+      "act_d7_pct": 71.4,
+      "act_d30_pct": 75.8,
+      "comp_d30_pct": 40.7,
+      "paid_d30_pct": 10.5
+    },
+    {
+      "week": "2024-03-18",
+      "cohort_size": 1741,
+      "enroll_d1_pct": 43.4,
+      "enroll_d7_pct": 80.9,
+      "act_d1_pct": 30.4,
+      "act_d7_pct": 69.0,
+      "act_d30_pct": 75.1,
+      "comp_d30_pct": 35.3,
+      "paid_d30_pct": 9.0
+    },
+    {
+      "week": "2024-03-25",
+      "cohort_size": 1736,
+      "enroll_d1_pct": 45.9,
+      "enroll_d7_pct": 83.8,
+      "act_d1_pct": 32.3,
+      "act_d7_pct": 70.2,
+      "act_d30_pct": 75.5,
+      "comp_d30_pct": 37.6,
+      "paid_d30_pct": 8.0
+    },
+    {
+      "week": "2024-04-01",
+      "cohort_size": 1843,
+      "enroll_d1_pct": 44.3,
+      "enroll_d7_pct": 81.6,
+      "act_d1_pct": 29.6,
+      "act_d7_pct": 69.2,
+      "act_d30_pct": 74.5,
+      "comp_d30_pct": 36.2,
+      "paid_d30_pct": 8.8
+    },
+    {
+      "week": "2024-04-08",
+      "cohort_size": 1793,
+      "enroll_d1_pct": 43.7,
+      "enroll_d7_pct": 81.9,
+      "act_d1_pct": 30.8,
+      "act_d7_pct": 67.9,
+      "act_d30_pct": 73.0,
+      "comp_d30_pct": 35.6,
+      "paid_d30_pct": 8.6
+    },
+    {
+      "week": "2024-04-15",
+      "cohort_size": 1772,
+      "enroll_d1_pct": 44.5,
+      "enroll_d7_pct": 83.6,
+      "act_d1_pct": 33.0,
+      "act_d7_pct": 72.2,
+      "act_d30_pct": 75.8,
+      "comp_d30_pct": 39.6,
+      "paid_d30_pct": 10.3
+    },
+    {
+      "week": "2024-04-22",
+      "cohort_size": 1792,
+      "enroll_d1_pct": 47.9,
+      "enroll_d7_pct": 84.4,
+      "act_d1_pct": 33.0,
+      "act_d7_pct": 72.3,
+      "act_d30_pct": 76.1,
+      "comp_d30_pct": 38.8,
+      "paid_d30_pct": 10.7
+    },
+    {
+      "week": "2024-04-29",
+      "cohort_size": 1812,
+      "enroll_d1_pct": 43.7,
+      "enroll_d7_pct": 81.0,
+      "act_d1_pct": 31.1,
+      "act_d7_pct": 69.8,
+      "act_d30_pct": 74.8,
+      "comp_d30_pct": 36.9,
+      "paid_d30_pct": 9.8
+    },
+    {
+      "week": "2024-05-06",
+      "cohort_size": 1842,
+      "enroll_d1_pct": 45.5,
+      "enroll_d7_pct": 82.2,
+      "act_d1_pct": 31.1,
+      "act_d7_pct": 69.8,
+      "act_d30_pct": 74.4,
+      "comp_d30_pct": 35.7,
+      "paid_d30_pct": 10.0
+    },
+    {
+      "week": "2024-05-13",
+      "cohort_size": 1920,
+      "enroll_d1_pct": 44.7,
+      "enroll_d7_pct": 82.4,
+      "act_d1_pct": 30.7,
+      "act_d7_pct": 70.4,
+      "act_d30_pct": 74.6,
+      "comp_d30_pct": 35.8,
+      "paid_d30_pct": 8.6
+    },
+    {
+      "week": "2024-05-20",
+      "cohort_size": 1886,
+      "enroll_d1_pct": 44.2,
+      "enroll_d7_pct": 84.0,
+      "act_d1_pct": 30.4,
+      "act_d7_pct": 70.6,
+      "act_d30_pct": 74.6,
+      "comp_d30_pct": 37.8,
+      "paid_d30_pct": 9.0
+    },
+    {
+      "week": "2024-05-27",
+      "cohort_size": 1951,
+      "enroll_d1_pct": 46.0,
+      "enroll_d7_pct": 83.3,
+      "act_d1_pct": 31.7,
+      "act_d7_pct": 70.8,
+      "act_d30_pct": 75.3,
+      "comp_d30_pct": 36.5,
+      "paid_d30_pct": 8.3
+    },
+    {
+      "week": "2024-06-03",
+      "cohort_size": 1946,
+      "enroll_d1_pct": 44.1,
+      "enroll_d7_pct": 81.9,
+      "act_d1_pct": 31.4,
+      "act_d7_pct": 69.7,
+      "act_d30_pct": 74.9,
+      "comp_d30_pct": 37.0,
+      "paid_d30_pct": 9.7
+    },
+    {
+      "week": "2024-06-10",
+      "cohort_size": 1929,
+      "enroll_d1_pct": 46.0,
+      "enroll_d7_pct": 82.6,
+      "act_d1_pct": 31.5,
+      "act_d7_pct": 68.5,
+      "act_d30_pct": 73.3,
+      "comp_d30_pct": 36.8,
+      "paid_d30_pct": 9.1
+    },
+    {
+      "week": "2024-06-17",
+      "cohort_size": 2082,
+      "enroll_d1_pct": 43.4,
+      "enroll_d7_pct": 80.7,
+      "act_d1_pct": 30.4,
+      "act_d7_pct": 68.4,
+      "act_d30_pct": 74.0,
+      "comp_d30_pct": 38.1,
+      "paid_d30_pct": 9.3
+    },
+    {
+      "week": "2024-06-24",
+      "cohort_size": 1931,
+      "enroll_d1_pct": 44.6,
+      "enroll_d7_pct": 83.4,
+      "act_d1_pct": 30.2,
+      "act_d7_pct": 69.5,
+      "act_d30_pct": 74.6,
+      "comp_d30_pct": 35.6,
+      "paid_d30_pct": 8.1
+    },
+    {
+      "week": "2024-07-01",
+      "cohort_size": 2056,
+      "enroll_d1_pct": 44.5,
+      "enroll_d7_pct": 83.6,
+      "act_d1_pct": 29.4,
+      "act_d7_pct": 69.8,
+      "act_d30_pct": 75.4,
+      "comp_d30_pct": 36.5,
+      "paid_d30_pct": 9.1
+    },
+    {
+      "week": "2024-07-08",
+      "cohort_size": 2035,
+      "enroll_d1_pct": 44.1,
+      "enroll_d7_pct": 82.7,
+      "act_d1_pct": 30.0,
+      "act_d7_pct": 69.3,
+      "act_d30_pct": 73.8,
+      "comp_d30_pct": 36.6,
+      "paid_d30_pct": 8.5
+    },
+    {
+      "week": "2024-07-15",
+      "cohort_size": 1927,
+      "enroll_d1_pct": 43.4,
+      "enroll_d7_pct": 83.2,
+      "act_d1_pct": 30.7,
+      "act_d7_pct": 69.7,
+      "act_d30_pct": 74.6,
+      "comp_d30_pct": 36.3,
+      "paid_d30_pct": 8.8
+    },
+    {
+      "week": "2024-07-22",
+      "cohort_size": 2019,
+      "enroll_d1_pct": 43.6,
+      "enroll_d7_pct": 82.4,
+      "act_d1_pct": 30.1,
+      "act_d7_pct": 68.5,
+      "act_d30_pct": 72.9,
+      "comp_d30_pct": 37.3,
+      "paid_d30_pct": 8.9
+    },
+    {
+      "week": "2024-07-29",
+      "cohort_size": 2047,
+      "enroll_d1_pct": 45.1,
+      "enroll_d7_pct": 81.9,
+      "act_d1_pct": 32.1,
+      "act_d7_pct": 69.9,
+      "act_d30_pct": 75.0,
+      "comp_d30_pct": 38.3,
+      "paid_d30_pct": 8.4
+    },
+    {
+      "week": "2024-08-05",
+      "cohort_size": 2187,
+      "enroll_d1_pct": 45.4,
+      "enroll_d7_pct": 84.2,
+      "act_d1_pct": 30.2,
+      "act_d7_pct": 70.7,
+      "act_d30_pct": 74.9,
+      "comp_d30_pct": 38.4,
+      "paid_d30_pct": 9.3
+    },
+    {
+      "week": "2024-08-12",
+      "cohort_size": 2050,
+      "enroll_d1_pct": 44.2,
+      "enroll_d7_pct": 82.0,
+      "act_d1_pct": 30.8,
+      "act_d7_pct": 70.9,
+      "act_d30_pct": 75.8,
+      "comp_d30_pct": 35.8,
+      "paid_d30_pct": 9.0
+    },
+    {
+      "week": "2024-08-19",
+      "cohort_size": 2113,
+      "enroll_d1_pct": 44.6,
+      "enroll_d7_pct": 83.1,
+      "act_d1_pct": 31.0,
+      "act_d7_pct": 69.9,
+      "act_d30_pct": 74.2,
+      "comp_d30_pct": 36.6,
+      "paid_d30_pct": 8.4
+    },
+    {
+      "week": "2024-08-26",
+      "cohort_size": 2133,
+      "enroll_d1_pct": 43.5,
+      "enroll_d7_pct": 83.7,
+      "act_d1_pct": 29.4,
+      "act_d7_pct": 68.4,
+      "act_d30_pct": 72.9,
+      "comp_d30_pct": 35.8,
+      "paid_d30_pct": 9.6
+    },
+    {
+      "week": "2024-09-02",
+      "cohort_size": 2112,
+      "enroll_d1_pct": 46.0,
+      "enroll_d7_pct": 82.2,
+      "act_d1_pct": 32.7,
+      "act_d7_pct": 69.9,
+      "act_d30_pct": 74.4,
+      "comp_d30_pct": 36.4,
+      "paid_d30_pct": 8.5
+    },
+    {
+      "week": "2024-09-09",
+      "cohort_size": 2195,
+      "enroll_d1_pct": 43.2,
+      "enroll_d7_pct": 81.0,
+      "act_d1_pct": 28.9,
+      "act_d7_pct": 68.8,
+      "act_d30_pct": 73.5,
+      "comp_d30_pct": 35.6,
+      "paid_d30_pct": 7.6
+    },
+    {
+      "week": "2024-09-16",
+      "cohort_size": 2151,
+      "enroll_d1_pct": 47.2,
+      "enroll_d7_pct": 83.8,
+      "act_d1_pct": 32.7,
+      "act_d7_pct": 71.6,
+      "act_d30_pct": 76.0,
+      "comp_d30_pct": 38.4,
+      "paid_d30_pct": 9.4
+    },
+    {
+      "week": "2024-09-23",
+      "cohort_size": 2132,
+      "enroll_d1_pct": 41.9,
+      "enroll_d7_pct": 82.1,
+      "act_d1_pct": 28.7,
+      "act_d7_pct": 68.6,
+      "act_d30_pct": 73.7,
+      "comp_d30_pct": 36.2,
+      "paid_d30_pct": 8.7
+    },
+    {
+      "week": "2024-09-30",
+      "cohort_size": 2204,
+      "enroll_d1_pct": 45.7,
+      "enroll_d7_pct": 83.1,
+      "act_d1_pct": 32.4,
+      "act_d7_pct": 70.1,
+      "act_d30_pct": 75.5,
+      "comp_d30_pct": 38.1,
+      "paid_d30_pct": 8.7
+    },
+    {
+      "week": "2024-10-07",
+      "cohort_size": 2193,
+      "enroll_d1_pct": 44.4,
+      "enroll_d7_pct": 83.0,
+      "act_d1_pct": 31.6,
+      "act_d7_pct": 69.2,
+      "act_d30_pct": 73.8,
+      "comp_d30_pct": 36.2,
+      "paid_d30_pct": 8.5
+    },
+    {
+      "week": "2024-10-14",
+      "cohort_size": 2187,
+      "enroll_d1_pct": 44.3,
+      "enroll_d7_pct": 82.3,
+      "act_d1_pct": 31.3,
+      "act_d7_pct": 69.8,
+      "act_d30_pct": 74.4,
+      "comp_d30_pct": 37.9,
+      "paid_d30_pct": 8.7
+    },
+    {
+      "week": "2024-10-21",
+      "cohort_size": 2189,
+      "enroll_d1_pct": 46.2,
+      "enroll_d7_pct": 84.6,
+      "act_d1_pct": 32.3,
+      "act_d7_pct": 72.1,
+      "act_d30_pct": 76.5,
+      "comp_d30_pct": 38.2,
+      "paid_d30_pct": 9.6
+    },
+    {
+      "week": "2024-10-28",
+      "cohort_size": 2111,
+      "enroll_d1_pct": 43.8,
+      "enroll_d7_pct": 83.9,
+      "act_d1_pct": 30.2,
+      "act_d7_pct": 71.7,
+      "act_d30_pct": 76.1,
+      "comp_d30_pct": 38.5,
+      "paid_d30_pct": 8.9
+    },
+    {
+      "week": "2024-11-04",
+      "cohort_size": 2300,
+      "enroll_d1_pct": 45.0,
+      "enroll_d7_pct": 82.3,
+      "act_d1_pct": 32.0,
+      "act_d7_pct": 69.8,
+      "act_d30_pct": 74.8,
+      "comp_d30_pct": 36.6,
+      "paid_d30_pct": 8.3
+    },
+    {
+      "week": "2024-11-11",
+      "cohort_size": 2244,
+      "enroll_d1_pct": 42.6,
+      "enroll_d7_pct": 81.1,
+      "act_d1_pct": 29.0,
+      "act_d7_pct": 68.3,
+      "act_d30_pct": 73.5,
+      "comp_d30_pct": 35.9,
+      "paid_d30_pct": 8.2
+    },
+    {
+      "week": "2024-11-18",
+      "cohort_size": 2206,
+      "enroll_d1_pct": 44.5,
+      "enroll_d7_pct": 82.5,
+      "act_d1_pct": 30.1,
+      "act_d7_pct": 69.6,
+      "act_d30_pct": 74.8,
+      "comp_d30_pct": 36.4,
+      "paid_d30_pct": 8.7
+    },
+    {
+      "week": "2024-11-25",
+      "cohort_size": 2323,
+      "enroll_d1_pct": 44.6,
+      "enroll_d7_pct": 82.4,
+      "act_d1_pct": 30.6,
+      "act_d7_pct": 69.6,
+      "act_d30_pct": 74.9,
+      "comp_d30_pct": 34.0,
+      "paid_d30_pct": 9.6
+    },
+    {
+      "week": "2024-12-02",
+      "cohort_size": 2226,
+      "enroll_d1_pct": 43.8,
+      "enroll_d7_pct": 81.8,
+      "act_d1_pct": 30.2,
+      "act_d7_pct": 70.4,
+      "act_d30_pct": 75.1,
+      "comp_d30_pct": 37.1,
+      "paid_d30_pct": 17.7
+    },
+    {
+      "week": "2024-12-09",
+      "cohort_size": 2252,
+      "enroll_d1_pct": 45.7,
+      "enroll_d7_pct": 82.6,
+      "act_d1_pct": 31.6,
+      "act_d7_pct": 69.4,
+      "act_d30_pct": 74.2,
+      "comp_d30_pct": 37.8,
+      "paid_d30_pct": 18.7
+    },
+    {
+      "week": "2024-12-16",
+      "cohort_size": 2278,
+      "enroll_d1_pct": 45.3,
+      "enroll_d7_pct": 83.7,
+      "act_d1_pct": 31.5,
+      "act_d7_pct": 71.3,
+      "act_d30_pct": 75.3,
+      "comp_d30_pct": 38.7,
+      "paid_d30_pct": 17.4
+    },
+    {
+      "week": "2024-12-23",
+      "cohort_size": 2197,
+      "enroll_d1_pct": 47.4,
+      "enroll_d7_pct": 86.4,
+      "act_d1_pct": 31.9,
+      "act_d7_pct": 73.2,
+      "act_d30_pct": 73.8,
+      "comp_d30_pct": 39.0,
+      "paid_d30_pct": 18.0
+    },
+    {
+      "week": "2024-12-30",
+      "cohort_size": 495,
+      "enroll_d1_pct": 87.3,
+      "enroll_d7_pct": 87.3,
+      "act_d1_pct": 72.3,
+      "act_d7_pct": 74.7,
+      "act_d30_pct": 74.7,
+      "comp_d30_pct": 40.8,
+      "paid_d30_pct": 14.1
+    }
+  ],
+  "lesson_funnel": [
+    {
+      "lesson_number": 1,
+      "total_potential": 149316,
+      "started_count": 129873,
+      "completed_count": 113297,
+      "drop_offs": 36017,
+      "completion_pct": 75.9
+    },
+    {
+      "lesson_number": 2,
+      "total_potential": 149316,
+      "started_count": 113299,
+      "completed_count": 106346,
+      "drop_offs": 6952,
+      "completion_pct": 71.2
+    },
+    {
+      "lesson_number": 3,
+      "total_potential": 149316,
+      "started_count": 106345,
+      "completed_count": 99585,
+      "drop_offs": 6762,
+      "completion_pct": 66.7
+    },
+    {
+      "lesson_number": 4,
+      "total_potential": 149316,
+      "started_count": 99584,
+      "completed_count": 92535,
+      "drop_offs": 7048,
+      "completion_pct": 62.0
+    },
+    {
+      "lesson_number": 5,
+      "total_potential": 149316,
+      "started_count": 92535,
+      "completed_count": 85612,
+      "drop_offs": 6924,
+      "completion_pct": 57.3
+    },
+    {
+      "lesson_number": 6,
+      "total_potential": 149316,
+      "started_count": 85612,
+      "completed_count": 79442,
+      "drop_offs": 6169,
+      "completion_pct": 53.2
+    },
+    {
+      "lesson_number": 7,
+      "total_potential": 136988,
+      "started_count": 73740,
+      "completed_count": 67645,
+      "drop_offs": 6094,
+      "completion_pct": 49.4
+    },
+    {
+      "lesson_number": 8,
+      "total_potential": 136988,
+      "started_count": 67646,
+      "completed_count": 65759,
+      "drop_offs": 1886,
+      "completion_pct": 48.0
+    },
+    {
+      "lesson_number": 9,
+      "total_potential": 49853,
+      "started_count": 25007,
+      "completed_count": 23140,
+      "drop_offs": 1867,
+      "completion_pct": 46.4
+    },
+    {
+      "lesson_number": 10,
+      "total_potential": 49853,
+      "started_count": 23139,
+      "completed_count": 23140,
+      "drop_offs": 0,
+      "completion_pct": 46.4
+    }
+  ],
+  "category_summary": [
+    {
+      "course_category": "cloud_devops",
+      "total_completed": 11483,
+      "total_paid": 3803.0,
+      "conversion_pct": 33.1
+    },
+    {
+      "course_category": "programming",
+      "total_completed": 17468,
+      "total_paid": 5331.0,
+      "conversion_pct": 30.5
+    },
+    {
+      "course_category": "data_analytics",
+      "total_completed": 17357,
+      "total_paid": 4929.0,
+      "conversion_pct": 28.4
+    },
+    {
+      "course_category": "marketing",
+      "total_completed": 11741,
+      "total_paid": 2754.0,
+      "conversion_pct": 23.5
+    },
+    {
+      "course_category": "design",
+      "total_completed": 11548,
+      "total_paid": 2319.0,
+      "conversion_pct": 20.1
+    }
+  ]
+}
