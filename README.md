@@ -1,4 +1,4 @@
-# Learning Platform Growth Analytics
+# E-Learning Platform Growth Analytics
 
 **Activation, Funnel, Experimentation, and Churn Analytics for an Online Skill-Certification Platform**
 
@@ -73,6 +73,3 @@ Streamlit Dashboard
 - The enrollment→first-lesson-started gap showed near-zero variance (data-generation artifact), which is why the activation metric was redefined around lesson *completion* instead, which showed realistic spread.
 - Payment-driver model has genuine but weak predictive power (AUC 0.57) — this is reported honestly rather than overstated, since statistical significance and practical predictive strength are different things.
 
-## License
-
-MIT — synthetic data and analysis are original work; project structure inspired by open-source analytics portfolio conventions.
