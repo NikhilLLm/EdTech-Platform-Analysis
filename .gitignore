@@ -1,0 +1,5 @@
+data/edtech.duckdb
+data/raw
+eda_results.txt
+work.md
+verify_dataset.py
