@@ -1,0 +1,340 @@
+{
+  "funnel": {
+    "macro_stages": [
+      {
+        "Stage": "1. Enrolled",
+        "Count": 149316,
+        "Pct_of_Enrolled": 100.0,
+        "Step_Conversion_Pct": 100.0
+      },
+      {
+        "Stage": "2. Started Lesson 1",
+        "Count": 129873,
+        "Pct_of_Enrolled": 86.9786225186852,
+        "Step_Conversion_Pct": 86.9786225186852
+      },
+      {
+        "Stage": "3. Completed Lesson 1 (Activated)",
+        "Count": 113297,
+        "Pct_of_Enrolled": 75.8773339762651,
+        "Step_Conversion_Pct": 87.2367620675583
+      },
+      {
+        "Stage": "4. Completed Course",
+        "Count": 69597,
+        "Pct_of_Enrolled": 46.6105440810094,
+        "Step_Conversion_Pct": 61.42881100117391
+      },
+      {
+        "Stage": "5. Paid Certification",
+        "Count": 19136,
+        "Pct_of_Enrolled": 12.81577325939618,
+        "Step_Conversion_Pct": 27.49543802175381
+      }
+    ],
+    "overall_conversion_pct": 12.82,
+    "lesson_1_drop_off_count": 36017,
+    "total_incomplete_enrollments": 79719,
+    "lesson_1_drop_off_share_pct": 45.18
+  },
+  "cohort_retention": {
+    "mean_activated_d1_pct": 31.56,
+    "mean_activated_d7_pct": 70.06,
+    "mean_activated_d30_pct": 74.74,
+    "mean_completed_d30_pct": 37.13,
+    "mean_paid_d30_pct": 9.72,
+    "activation_d7_drift_slope_per_week": 0.0186,
+    "activation_d7_drift_p_value": 0.1237
+  },
+  "ab_test": {
+    "step_conditional": [
+      {
+        "Stage": "1. Enrolled | Registered",
+        "Control_Rate_Pct": 86.99,
+        "Treatment_Rate_Pct": 86.86,
+        "Diff_Pct_Points": -0.13,
+        "Relative_Lift_Pct": -0.15,
+        "Z_Score": -0.613,
+        "P_Value": 0.5399998799772745,
+        "CI_95_Lower": -0.55,
+        "CI_95_Upper": 0.29,
+        "Significant_p05": false
+      },
+      {
+        "Stage": "2. Activated | Enrolled",
+        "Control_Rate_Pct": 83.06,
+        "Treatment_Rate_Pct": 88.86,
+        "Diff_Pct_Points": 5.8,
+        "Relative_Lift_Pct": 6.98,
+        "Z_Score": 24.613,
+        "P_Value": 0.0,
+        "CI_95_Lower": 5.34,
+        "CI_95_Upper": 6.26,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "3. Completed | Activated",
+        "Control_Rate_Pct": 71.72,
+        "Treatment_Rate_Pct": 72.51,
+        "Diff_Pct_Points": 0.79,
+        "Relative_Lift_Pct": 1.1,
+        "Z_Score": 2.411,
+        "P_Value": 0.015914978406997182,
+        "CI_95_Lower": 0.15,
+        "CI_95_Upper": 1.43,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "4. Paid | Completed",
+        "Control_Rate_Pct": 32.29,
+        "Treatment_Rate_Pct": 33.65,
+        "Diff_Pct_Points": 1.36,
+        "Relative_Lift_Pct": 4.22,
+        "Z_Score": 3.361,
+        "P_Value": 0.0007762305797154312,
+        "CI_95_Lower": 0.57,
+        "CI_95_Upper": 2.16,
+        "Significant_p05": true
+      }
+    ],
+    "cumulative": [
+      {
+        "Stage": "1. Enrolled (Overall)",
+        "Control_Rate_Pct": 86.99,
+        "Treatment_Rate_Pct": 86.86,
+        "Diff_Pct_Points": -0.13,
+        "Relative_Lift_Pct": -0.15,
+        "Z_Score": -0.613,
+        "P_Value": 0.5399998799772745,
+        "CI_95_Lower": -0.55,
+        "CI_95_Upper": 0.29,
+        "Significant_p05": false
+      },
+      {
+        "Stage": "2. Activated (Overall)",
+        "Control_Rate_Pct": 72.26,
+        "Treatment_Rate_Pct": 77.18,
+        "Diff_Pct_Points": 4.93,
+        "Relative_Lift_Pct": 6.82,
+        "Z_Score": 17.933,
+        "P_Value": 0.0,
+        "CI_95_Lower": 4.39,
+        "CI_95_Upper": 5.47,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "3. Completed (Overall)",
+        "Control_Rate_Pct": 51.82,
+        "Treatment_Rate_Pct": 55.97,
+        "Diff_Pct_Points": 4.15,
+        "Relative_Lift_Pct": 8.0,
+        "Z_Score": 13.151,
+        "P_Value": 0.0,
+        "CI_95_Lower": 3.53,
+        "CI_95_Upper": 4.76,
+        "Significant_p05": true
+      },
+      {
+        "Stage": "4. Paid (Overall)",
+        "Control_Rate_Pct": 16.73,
+        "Treatment_Rate_Pct": 18.84,
+        "Diff_Pct_Points": 2.1,
+        "Relative_Lift_Pct": 12.56,
+        "Z_Score": 8.689,
+        "P_Value": 0.0,
+        "CI_95_Lower": 1.63,
+        "CI_95_Upper": 2.58,
+        "Significant_p05": true
+      }
+    ]
+  },
+  "payment_drivers": {
+    "category_conversion": [
+      {
+        "course_category": "cloud_devops",
+        "completed_enrollments": 11483,
+        "paid_certificates": 3803,
+        "conversion_rate_pct": 33.118523034050334
+      },
+      {
+        "course_category": "programming",
+        "completed_enrollments": 17468,
+        "paid_certificates": 5331,
+        "conversion_rate_pct": 30.518662697504006
+      },
+      {
+        "course_category": "data_analytics",
+        "completed_enrollments": 17357,
+        "paid_certificates": 4929,
+        "conversion_rate_pct": 28.39776459065507
+      },
+      {
+        "course_category": "marketing",
+        "completed_enrollments": 11741,
+        "paid_certificates": 2754,
+        "conversion_rate_pct": 23.456264372711015
+      },
+      {
+        "course_category": "design",
+        "completed_enrollments": 11548,
+        "paid_certificates": 2319,
+        "conversion_rate_pct": 20.081399376515414
+      }
+    ],
+    "model_auc": 0.5675,
+    "odds_ratios": [
+      {
+        "Feature": "Intercept",
+        "Coefficient": -2.3330650419447263,
+        "Odds_Ratio": 0.09699798809866567,
+        "P_Value": 3.794826828160759e-117,
+        "CI_Lower": 0.07951560351963054,
+        "CI_Upper": 0.11832406821720372
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.cloud_devops]",
+        "Coefficient": 0.680273072292366,
+        "Odds_Ratio": 1.9744168171488652,
+        "P_Value": 3.93581783546057e-105,
+        "CI_Lower": 1.8571518424694575,
+        "CI_Upper": 2.0990861806198096
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.data_analytics]",
+        "Coefficient": 0.4582783598917417,
+        "Odds_Ratio": 1.5813491259738066,
+        "P_Value": 1.7831783812152684e-55,
+        "CI_Lower": 1.4933612948688817,
+        "CI_Upper": 1.6745211402025004
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.marketing]",
+        "Coefficient": 0.199565700559464,
+        "Odds_Ratio": 1.220872418797012,
+        "P_Value": 4.583550912816747e-10,
+        "CI_Lower": 1.146609940074046,
+        "CI_Upper": 1.2999446550088438
+      },
+      {
+        "Feature": "C(course_category, Treatment('design'))[T.programming]",
+        "Coefficient": 0.5598825499974601,
+        "Odds_Ratio": 1.7504668958808507,
+        "P_Value": 2.3096652080422327e-80,
+        "CI_Lower": 1.6521522938035687,
+        "CI_Upper": 1.8546319035278045
+      },
+      {
+        "Feature": "C(signup_channel, Treatment('organic'))[T.paid_ad]",
+        "Coefficient": 0.006759423521202115,
+        "Odds_Ratio": 1.006782319984263,
+        "P_Value": 0.7496117270235323,
+        "CI_Lower": 0.9658455251612593,
+        "CI_Upper": 1.049454196791625
+      },
+      {
+        "Feature": "C(signup_channel, Treatment('organic'))[T.referral]",
+        "Coefficient": -0.0015307562578963645,
+        "Odds_Ratio": 0.9984704147518778,
+        "P_Value": 0.9539761920601217,
+        "CI_Lower": 0.9478918508482507,
+        "CI_Upper": 1.0517478003873977
+      },
+      {
+        "Feature": "C(signup_channel, Treatment('organic'))[T.social]",
+        "Coefficient": -0.004834782396319015,
+        "Odds_Ratio": 0.9951768863512316,
+        "P_Value": 0.8398392202949533,
+        "CI_Lower": 0.94959219193003,
+        "CI_Upper": 1.0429498510458555
+      },
+      {
+        "Feature": "quiz_pass_rate_clean",
+        "Coefficient": 1.1926320391170997,
+        "Odds_Ratio": 3.2957443295389877,
+        "P_Value": 9.548849496672125e-26,
+        "CI_Lower": 2.6374448174626375,
+        "CI_Upper": 4.118353723941852
+      },
+      {
+        "Feature": "days_to_complete",
+        "Coefficient": 0.0006879455618600302,
+        "Odds_Ratio": 1.0006881822506812,
+        "P_Value": 0.5470949302707382,
+        "CI_Lower": 0.9984498093958373,
+        "CI_Upper": 1.0029315731975619
+      },
+      {
+        "Feature": "age_clean",
+        "Coefficient": -7.731032644559932e-05,
+        "Odds_Ratio": 0.9999226926619207,
+        "P_Value": 0.9463798798101084,
+        "CI_Lower": 0.9976723541119565,
+        "CI_Upper": 1.0021781070502285
+      }
+    ]
+  },
+  "churn_risk": {
+    "segment_distribution": [
+      {
+        "churn_risk_segment": "High Churn Risk",
+        "user_count": 61894,
+        "pct": 61.89
+      },
+      {
+        "churn_risk_segment": "Completed All",
+        "user_count": 27314,
+        "pct": 27.31
+      },
+      {
+        "churn_risk_segment": "Active / Low Risk",
+        "user_count": 6808,
+        "pct": 6.81
+      },
+      {
+        "churn_risk_segment": "Medium Churn Risk",
+        "user_count": 3984,
+        "pct": 3.98
+      }
+    ],
+    "test_roc_auc": 0.7796,
+    "odds_ratios": [
+      {
+        "Feature": "activated_int",
+        "Coefficient": -7.207207413470704,
+        "Odds_Ratio": 0.0007412242006361232
+      },
+      {
+        "Feature": "quiz_pass_rate",
+        "Coefficient": -3.2213521464008363,
+        "Odds_Ratio": 0.03990106968088907
+      },
+      {
+        "Feature": "total_enrolled_courses",
+        "Coefficient": -0.6998193703965744,
+        "Odds_Ratio": 0.4966750098994458
+      },
+      {
+        "Feature": "signup_channel_paid_ad",
+        "Coefficient": -0.02180489424579251,
+        "Odds_Ratio": 0.9784311139702481
+      },
+      {
+        "Feature": "signup_channel_social",
+        "Coefficient": -0.01709025385457007,
+        "Odds_Ratio": 0.9830549561318801
+      },
+      {
+        "Feature": "age_clean",
+        "Coefficient": 3.862610531525443e-05,
+        "Odds_Ratio": 1.0000386268513128
+      },
+      {
+        "Feature": "signup_channel_referral",
+        "Coefficient": 0.014233899214842383,
+        "Odds_Ratio": 1.0143356835140505
+      }
+    ],
+    "total_enrolled_cohort": 86926,
+    "baseline_churn_rate_pct": 37.99
+  }
+}
